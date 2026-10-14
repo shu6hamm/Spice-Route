@@ -1,0 +1,62 @@
+/* Small custom styles on top of Bootstrap */
+
+:root {
+  --brand: #b3261e;       /* chili red used for buttons and highlights */
+  --brand-dark: #8f1d17;
+  --paper: #fff8ef;       /* soft background for the page */
+}
+
+body {
+  background-color: var(--paper);
+}
+
+.text-brand {
+  color: var(--brand);
+}
+
+.btn-brand {
+  background-color: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--brand-dark);
+  border-color: var(--brand-dark);
+  color: #fff;
+}
+
+.btn-outline-brand {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.btn-outline-brand:hover {
+  background-color: var(--brand);
+  color: #fff;
+}
+
+.navbar-brand-text {
+  color: var(--brand);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Big emoji used instead of photos so the project works offline */
+.food-emoji {
+  font-size: 4rem;
+  line-height: 1;
+}
+.food-emoji-large {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+/* Keeps the footer at the bottom even on short pages */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
